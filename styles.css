@@ -1,12 +1,12 @@
 /*
-=============== 
+===============
 Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
 /*
-=============== 
+===============
 Variables
 ===============
 */
@@ -55,7 +55,7 @@ Variables
   --fixed-width: 620px;
 }
 /*
-=============== 
+===============
 Global Styles
 ===============
 */
@@ -173,7 +173,7 @@ main {
   place-items: center;
 }
 /*
-=============== 
+===============
 Countdown Timer
 ===============
 */
@@ -186,6 +186,9 @@ Countdown Timer
 }
 .gift-info p {
   color: var(--clr-grey-6);
+}
+p {
+  text-align: center;
 }
 .date {
   color: var(--clr-grey-5);

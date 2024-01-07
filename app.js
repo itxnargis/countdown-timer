@@ -27,13 +27,13 @@ const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
 let tempDate = new Date();
-let tempYear = tempDate.getFullYear();
-let tempMonth = tempDate.getMonth();
-let tempDay =tempDate.getDate();
+// let tempYear = tempDate.getFullYear();
+// let tempMonth = tempDate.getMonth();
+// let tempDay =tempDate.getDate();
 
 // let futureDate = new Date(2024, 0, 24, 11, 30, 0);
 
-const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
+const futureDate = new Date(2024, 4, 4, 12, 0, 0);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
@@ -42,7 +42,7 @@ month = months[month];
 const date = futureDate.getDate();
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `giveaway ends on ${weekday} ${date} ${month} ${year} ${hours}:${minutes}am`;
+giveaway.textContent = `My 20th Birthday on🎉🥳 ${weekday} ${date} ${month} ${year} ${hours}:${minutes}am`;
 
 //future time in miliseconds
 const futureTime = futureDate.getTime();
@@ -77,7 +77,7 @@ function getRemainingTime(){
   });
   if(t < 0){
     clearInterval(countdown);
-    deadline.innerHTML = `<h4 class= "expired">Sorry, this giveaway has expired</h4>`;
+    deadline.innerHTML = `<h4 class= "expired">Birthday is gone but not your laugh</h4>`;
   }
 
 }
