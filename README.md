@@ -1,6 +1,6 @@
 # Countdown Website
 
-A simple website with a countdown timer for an old iPhone giveaway.
+It's a simple website with a countdown timer for my birthday giveaway.
 
 ## Table of Contents
 - [Description](#description)
@@ -9,7 +9,7 @@ A simple website with a countdown timer for an old iPhone giveaway.
 
 ## Description
 
-This project is a website that displays a countdown timer for an old iPhone giveaway. It includes information about the giveaway, such as the end date, and dynamically updates the countdown in days, hours, minutes, and seconds.
+This project is a website that displays a countdown timer for a birthday giveaway. It includes information about the giveaway, such as the end date, and dynamically updates the countdown in days, hours, minutes, and seconds.
 
 ## Screenshot
 
