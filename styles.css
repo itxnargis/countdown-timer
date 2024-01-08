@@ -183,6 +183,11 @@ Countdown Timer
 .gift-info h3 {
   text-transform: uppercase;
   color: var(--clr-primary-3);
+  text-align: center;
+}
+
+.giveaway {
+  text-align: center;
 }
 .gift-info p {
   color: var(--clr-grey-6);

@@ -27,13 +27,12 @@ const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
 let tempDate = new Date();
-// let tempYear = tempDate.getFullYear();
-// let tempMonth = tempDate.getMonth();
-// let tempDay =tempDate.getDate();
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth();
+let tempDay =tempDate.getDate();
 
-// let futureDate = new Date(2024, 0, 24, 11, 30, 0);
+ let futureDate = new Date(2024, 4, 4, 0, 0, 0);
 
-const futureDate = new Date(2024, 4, 4, 12, 0, 0);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
@@ -42,7 +41,8 @@ month = months[month];
 const date = futureDate.getDate();
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `My 20th Birthday on🎉🥳 ${weekday} ${date} ${month} ${year} ${hours}:${minutes}am`;
+giveaway.textContent = `On🎉🥳 ${weekday} ${date} ${month} ${year} ${(hours % 12 === 0 ? 12 : hours % 12)}:${minutes < 10 ? '0' : ''}${minutes}${hours >= 12 ? 'pm' : 'am'}`;
+
 
 //future time in miliseconds
 const futureTime = futureDate.getTime();
